@@ -27,6 +27,8 @@ def load_act(act):
 
 
 def read_config(args):
+    args.model_name=args.model
+    args.dataset_name=args.dataset
     # specify the model family
     if args.model == 'homo_GNN':
         args.model_family = 'homogenization'

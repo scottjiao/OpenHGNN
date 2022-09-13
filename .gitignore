@@ -167,7 +167,10 @@ cython_debug/
 *.npz
 
 # yaml files
-#*.yaml
+*.yaml
+
+# csv files
+*.csv
 
 .DS_Store
 *.txt
