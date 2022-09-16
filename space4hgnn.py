@@ -36,8 +36,8 @@ def Space4HGNN(args):
                 out_dict[f"{mode}_{m}"].append(score)
             
     end = time.time()
-    mean_dict = {k + 'mean': np.mean(v) for k, v in out_dict.items()}
-    std_dict = {k + 'std': np.std(v) for k, v in out_dict.items()}
+    mean_dict = {k.cpu() + 'mean': np.mean(v.cpu()) for k, v in out_dict.items()}
+    std_dict = {k.cpu() + 'std': np.std(v.cpu()) for k, v in out_dict.items()}
     para = sum(p.numel() for p in flow.model.parameters())
     result = {
         'key': [args.key],
