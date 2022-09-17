@@ -58,6 +58,7 @@ class RelationConv(nn.Module):
         }, aggregate=macro_func)
 
     def forward(self, g, h_dict):
+        print(h_dict,g,self.model)
         h_dict = self.model(g, h_dict)
         return h_dict
 

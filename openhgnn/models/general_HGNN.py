@@ -80,7 +80,7 @@ class general_HGNN(BaseModel):
 
     def forward(self, hg, h_dict):
         with hg.local_scope():
-            hg = self.hg
+            #hg = self.hg
             h_dict = {key: value for key, value in h_dict.items() if key in hg.ntypes}
             if hasattr(self, 'pre_mp'):
                 h_dict = self.pre_mp(h_dict)
