@@ -37,7 +37,8 @@ then
   #datasets=(HGBn-ACM)
 elif [ "$5" == "link_prediction" ]
 then
-  datasets=(HGBl-amazon HGBl-LastFM HGBl-PubMed)
+  #datasets=(HGBl-amazon HGBl-LastFM HGBl-PubMed)
+  datasets=(HGBl-LastFM HGBl-PubMed)
   #datasets=(HGBl-ACM HGBl-DBLP HGBl-IMDB)
 elif [ "$5" == "recommendation" ]
 then

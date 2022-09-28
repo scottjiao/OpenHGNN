@@ -33,7 +33,8 @@ aggrs=(gcnconv gatconv sageconv ginconv)
 #aggrs=(gcnconv)
 if [ "$5" == "node_classification" ]
 then
-  datasets=(HGBn-ACM HGBn-DBLP HGBn-IMDB HGBn-Freebase HNE-PubMed)
+  #datasets=(HGBn-ACM HGBn-DBLP HGBn-IMDB HGBn-Freebase HNE-PubMed)
+  datasets=(HGBn-IMDB HGBn-Freebase)
   #datasets=(HGBn-ACM)
 elif [ "$5" == "link_prediction" ]
 then
